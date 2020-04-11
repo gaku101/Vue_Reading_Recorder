@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import BookSearch from '../components/BookSearch.vue'
-// import BookForm from './components/BookForm.vue'
+import BookForm from '../components/BookForm.vue'
 import Home from '../components/Home.vue'
 
 Vue.use(VueRouter)
@@ -17,11 +17,11 @@ Vue.use(VueRouter)
     name: 'search',
     component: BookSearch
   },
-  // {
-  //   path: '/form',
-  //   name: 'form',
-  //   component: BookForm
-  // },
+  {
+    path: '/form',
+    name: 'form',
+    component: BookForm
+  },
   {path: '*', redirect: '/'}
 ]
 

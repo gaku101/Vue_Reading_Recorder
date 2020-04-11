@@ -21,7 +21,7 @@ export default {
   name: 'book-info',
   props: {
     index: { type: Number },
-    linkable: { type: Boolean, default: false },
+    linkable: { type: Boolean, default: true },
     book: { type: Object }
   },
   methods: {
